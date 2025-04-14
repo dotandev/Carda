@@ -1,6 +1,6 @@
-# 📚 Bookies Backend
+# 📚 Carda Backend
 
-A backend service for managing books, authors, and genres using **Express**, **TypeScript**, and **MongoDB**.
+A backend service for managing patients, doctors, and genes data using **Express**, **TypeScript**, and **MongoDB**.
 
 ---
 
@@ -9,8 +9,8 @@ A backend service for managing books, authors, and genres using **Express**, **T
 ### 🛠 Installation
 
 ```bash
-git clone https://github.com/dotandev/bookies.git
-cd bookies
+git clone https://github.com/dotandev/carda.git
+cd doctories
 npm install
 ```
 
@@ -27,7 +27,7 @@ npm run begin
 ##  Project Structure
 
 ```
-bookies-backend/
+doctories-backend/
 ├── src/
 │   ├── controllers/       # Business logic
 │   ├── models/            # Mongoose models
@@ -50,7 +50,7 @@ Create a `.env` file in the root:
 
 ```env
 PORT=3000
-MONGO_URI=mongodb://localhost:27017/bookies
+MONGO_URI=mongodb://localhost:27017/doctories
 JWT_SECRET=your-secret
 ```
 
@@ -66,70 +66,70 @@ Below is the API reference in JSON format. You can load this into tools like Pos
   "endpoints": [
     {
       "method": "GET",
-      "path": "/books",
-      "description": "Get all books"
+      "path": "/doctors",
+      "description": "Get all doctors"
     },
     {
       "method": "GET",
-      "path": "/books/:bookId",
-      "description": "Get a single book by ID"
+      "path": "/doctors/:doctorId",
+      "description": "Get a single doctor by ID"
     },
     {
       "method": "GET",
-      "path": "/books/slug/:slug",
-      "description": "Get a single book by slug"
+      "path": "/doctors/slug/:slug",
+      "description": "Get a single doctor by slug"
     },
     {
       "method": "GET",
-      "path": "/books/:bookId/authors",
-      "description": "Get authors of a book"
+      "path": "/doctors/:doctorId/patients",
+      "description": "Get patients of a doctor"
     },
     {
       "method": "GET",
-      "path": "/books/:bookId/genres",
-      "description": "Get genres of a book"
+      "path": "/doctors/:doctorId/genes",
+      "description": "Get genes of a doctor"
     },
     {
       "method": "POST",
-      "path": "/books",
+      "path": "/doctors",
       "auth": true,
-      "description": "Create a new book"
+      "description": "Create a new doctor"
     },
     {
       "method": "PUT",
-      "path": "/books/:bookId",
+      "path": "/doctors/:doctorId",
       "auth": true,
-      "description": "Update a book"
+      "description": "Update a doctor"
     },
     {
       "method": "DELETE",
-      "path": "/books/:bookId",
+      "path": "/doctors/:doctorId",
       "auth": true,
-      "description": "Delete a book"
+      "description": "Delete a doctor"
     },
     {
       "method": "PATCH",
-      "path": "/books/:bookId/authors",
+      "path": "/doctors/:doctorId/patients",
       "auth": true,
-      "description": "Assign authors to a book"
+      "description": "Assign patients to a doctor"
     },
     {
       "method": "PATCH",
-      "path": "/books/:bookId/genres",
+      "path": "/doctors/:doctorId/genes",
       "auth": true,
-      "description": "Assign genres to a book"
+      "description": "Assign genes to a doctor"
     },
     {
       "method": "DELETE",
-      "path": "/books/:bookId/authors",
+      "path": "/doctors/:doctorId/patients",
       "auth": true,
-      "description": "Remove authors from a book"
+      "description": "Remove patients from a doctor"
     },
     {
       "method": "DELETE",
-      "path": "/books/:bookId/genres",
+      "path": "/doctors/:doctorId/genes",
       "auth": true,
-      "description": "Remove genres from a book"
+      "description": "Remove genes from a doctor"
     }
   ]
 }
@@ -140,7 +140,7 @@ Below is the API reference in JSON format. You can load this into tools like Pos
 ## ✅ Features
 
 -  JWT-based authentication
--  CRUD operations for books, authors, and genres
+-  CRUD operations for doctors, patients, and genes
 -  Joi validators for robust input validation
 - RESTful API structure
 -  Typed with TypeScript
