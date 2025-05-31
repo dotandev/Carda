@@ -3,12 +3,12 @@ import cors from "cors";
 import morgan from "morgan";
 import { Database } from "./utils";
 import { config } from "./config";
-import { bookRouter, genreRouter, userRouter, authorRouter, authBookRouter, authorAuthRouter, genreAuthRouter } from "./routers";
+import { recordAuthRouter, userRouter } from "./routers";
 
 
 const database = new Database();
 
-let uri = process.env.MONGO_URI as string;
+let uri = process.env.MONGO_URI as string || "mongodb+srv://card:card@cluster0.rwrjqhr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const {
     connectMongo
@@ -30,13 +30,10 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app
-    .use("/api/books", bookRouter)
-    .use("/api/books", authBookRouter.router)
-    .use("/api/users", userRouter.router)
-    .use("/api/authors", authorRouter)
-    .use("/api/authors", authorAuthRouter.router)
-    .use("/api/genres", genreRouter)
-    .use("/api/genres", genreAuthRouter.router)
+
+    .use("/api", userRouter)
+    .use("/api", recordAuthRouter.router)
+    
 
 
 

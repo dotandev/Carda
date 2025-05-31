@@ -1,0 +1,1998 @@
+{
+  "info": {
+    "_postman_id": "12a0a26b-5949-4531-9416-beda5e7fb2a9",
+    "name": "v1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39963712"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"rv3ijjip3rst\",\n    \"firstName\": \"r3lijnjkmr3\",\n    \"lastName\": \"njnnrljr3\",\n    \"paswword\": \"jnjnjnj\",\n    \"username\": \"jnkjbhvcbcwst\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/users/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "users",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"rv3ijjip3rst\",\n    \"paswword\": \"jnjnjnj\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/users/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "users",
+                "login"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Login",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"email\": \"rv3ijjip3rst\",\n    \"paswword\": \"jnjnjnj\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/users/login",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "users",
+                    "login"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "219"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"db-HpnvQyY8tu+upSP0id/L5DgdwlY\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 10:06:28 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Books",
+      "item": [
+        {
+          "name": "Get All Books",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get All Books",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9999/api/books",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "books"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "800"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"320-sAqzS2mc3SNlm2e+wx1mUZpjsYg\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 10:30:43 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Books fetched successfully\",\n    \"data\": {\n        \"totalBooks\": 1,\n        \"totalPages\": 1,\n        \"currentPage\": 1,\n        \"books\": [\n            {\n                \"edition\": {\n                    \"isbn\": \"9780747532743\",\n                    \"publishedYear\": 1997,\n                    \"language\": \"English\",\n                    \"pages\": 223,\n                    \"format\": \"hardcover\"\n                },\n                \"stats\": {\n                    \"reads\": 0,\n                    \"downloads\": 0,\n                    \"ratings\": 0,\n                    \"averageRating\": 0\n                },\n                \"_id\": \"67f257cab40d7f84a60c9eed\",\n                \"title\": \"Harry Potter and the Philosopher's Stone\",\n                \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n                \"slug\": \"harry-potter-1\",\n                \"description\": \"The first book in the Harry Potter series.\",\n                \"coverUrl\": \"https://example.com/hp1.jpg\",\n                \"authors\": [],\n                \"genres\": [],\n                \"tags\": [\n                    \"magic\",\n                    \"fantasy\",\n                    \"wizard\"\n                ],\n                \"contributors\": [],\n                \"published\": true,\n                \"publishDate\": \"1997-06-26T00:00:00.000Z\",\n                \"deleted\": false,\n                \"createdAt\": \"2025-04-06T10:30:34.478Z\",\n                \"updatedAt\": \"2025-04-06T10:30:34.478Z\",\n                \"__v\": 0\n            }\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create A Book",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n//   \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"67f270e9bb0f925036d7c68b\", \"67f27038e285a8595e168b6c\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create A Book",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n//   \"author\": \"662f10b7e034545ea7d318cf\",\n//   \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/books",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "books"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "741"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"2e5-B8oTcfwh7h40Z0mhB5sLtY8/scU\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 10:30:34 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 201,\n    \"message\": \"Book created successfully\",\n    \"data\": {\n        \"title\": \"Harry Potter and the Philosopher's Stone\",\n        \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n        \"slug\": \"harry-potter-1\",\n        \"description\": \"The first book in the Harry Potter series.\",\n        \"coverUrl\": \"https://example.com/hp1.jpg\",\n        \"authors\": [],\n        \"genres\": [],\n        \"tags\": [\n            \"magic\",\n            \"fantasy\",\n            \"wizard\"\n        ],\n        \"edition\": {\n            \"isbn\": \"9780747532743\",\n            \"publishedYear\": 1997,\n            \"language\": \"English\",\n            \"pages\": 223,\n            \"format\": \"hardcover\"\n        },\n        \"stats\": {\n            \"reads\": 0,\n            \"downloads\": 0,\n            \"ratings\": 0,\n            \"averageRating\": 0\n        },\n        \"contributors\": [],\n        \"published\": true,\n        \"publishDate\": \"1997-06-26T00:00:00.000Z\",\n        \"deleted\": false,\n        \"_id\": \"67f257cab40d7f84a60c9eed\",\n        \"createdAt\": \"2025-04-06T10:30:34.478Z\",\n        \"updatedAt\": \"2025-04-06T10:30:34.478Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update A Book",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Book",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Book By Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books/:bookId",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books",
+                ":bookId"
+              ],
+              "variable": [
+                {
+                  "key": "bookId",
+                  "value": "67f257cab40d7f84a60c9eed"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Book By Id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+                  
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Book fetched successfully\",\n    \"data\": {\n        \"edition\": {\n            \"isbn\": \"9780747532743\",\n            \"publishedYear\": 1997,\n            \"language\": \"English\",\n            \"pages\": 223,\n            \"format\": \"hardcover\"\n        },\n        \"stats\": {\n            \"reads\": 0,\n            \"downloads\": 0,\n            \"ratings\": 0,\n            \"averageRating\": 0\n        },\n        \"_id\": \"67f257cab40d7f84a60c9eed\",\n        \"title\": \"Harry Potter and the Philosopher's Stone\",\n        \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n        \"slug\": \"harry-potter-1\",\n        \"description\": \"The first book in the Harry Potter series.\",\n        \"coverUrl\": \"https://example.com/hp1.jpg\",\n        \"authors\": [],\n        \"genres\": [],\n        \"tags\": [\n            \"magic\",\n            \"fantasy\",\n            \"wizard\"\n        ],\n        \"contributors\": [],\n        \"published\": true,\n        \"publishDate\": \"1997-06-26T00:00:00.000Z\",\n        \"deleted\": false,\n        \"createdAt\": \"2025-04-06T10:30:34.478Z\",\n        \"updatedAt\": \"2025-04-06T10:30:34.478Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Book By Slug",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books/slug/:slug",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books",
+                "slug",
+                ":slug"
+              ],
+              "variable": [
+                {
+                  "key": "slug",
+                  "value": "harry-potter-1"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Book By Id Copy",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/books/slug/:slug",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "books",
+                    "slug",
+                    ":slug"
+                  ],
+                  "variable": [
+                    {
+                      "key": "slug",
+                      "value": "harry-potter-1"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "741"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"2e5-av0yZeuJ7nALSGIMoxsXwSaV1TY\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 10:39:05 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Book fetched successfully\",\n    \"data\": {\n        \"edition\": {\n            \"isbn\": \"9780747532743\",\n            \"publishedYear\": 1997,\n            \"language\": \"English\",\n            \"pages\": 223,\n            \"format\": \"hardcover\"\n        },\n        \"stats\": {\n            \"reads\": 0,\n            \"downloads\": 0,\n            \"ratings\": 0,\n            \"averageRating\": 0\n        },\n        \"_id\": \"67f257cab40d7f84a60c9eed\",\n        \"title\": \"Harry Potter and the Philosopher's Stone\",\n        \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n        \"slug\": \"harry-potter-1\",\n        \"description\": \"The first book in the Harry Potter series.\",\n        \"coverUrl\": \"https://example.com/hp1.jpg\",\n        \"authors\": [],\n        \"genres\": [],\n        \"tags\": [\n            \"magic\",\n            \"fantasy\",\n            \"wizard\"\n        ],\n        \"contributors\": [],\n        \"published\": true,\n        \"publishDate\": \"1997-06-26T00:00:00.000Z\",\n        \"deleted\": false,\n        \"createdAt\": \"2025-04-06T10:30:34.478Z\",\n        \"updatedAt\": \"2025-04-06T10:30:34.478Z\",\n        \"__v\": 0\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Assign Author",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"authorIds\": [\"67f2745f4aa82ebfeb9c3466\"]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books/:bookId/authors",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books",
+                ":bookId",
+                "authors"
+              ],
+              "variable": [
+                {
+                  "key": "bookId",
+                  "value": "67f257cab40d7f84a60c9eed"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Assign Author",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"authorIds\": [\"662f108de034545ea7d318ca\"]\n}\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/books/:bookId/authors",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "books",
+                    ":bookId",
+                    "authors"
+                  ],
+                  "variable": [
+                    {
+                      "key": "bookId",
+                      "value": "67f257cab40d7f84a60c9eed"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "771"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"303-2So8dWlPewL5hHtfMecOyVM5+qc\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 10:48:13 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Authors assigned successfully\",\n    \"data\": {\n        \"edition\": {\n            \"isbn\": \"9780747532743\",\n            \"publishedYear\": 1997,\n            \"language\": \"English\",\n            \"pages\": 223,\n            \"format\": \"hardcover\"\n        },\n        \"stats\": {\n            \"reads\": 0,\n            \"downloads\": 0,\n            \"ratings\": 0,\n            \"averageRating\": 0\n        },\n        \"_id\": \"67f257cab40d7f84a60c9eed\",\n        \"title\": \"Harry Potter and the Philosopher's Stone\",\n        \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n        \"slug\": \"harry-potter-1\",\n        \"description\": \"The first book in the Harry Potter series.\",\n        \"coverUrl\": \"https://example.com/hp1.jpg\",\n        \"authors\": [\n            \"662f108de034545ea7d318ca\"\n        ],\n        \"genres\": [],\n        \"tags\": [\n            \"magic\",\n            \"fantasy\",\n            \"wizard\"\n        ],\n        \"contributors\": [],\n        \"published\": true,\n        \"publishDate\": \"1997-06-26T00:00:00.000Z\",\n        \"deleted\": false,\n        \"createdAt\": \"2025-04-06T10:30:34.478Z\",\n        \"updatedAt\": \"2025-04-06T10:48:13.284Z\",\n        \"__v\": 1\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Remove Author",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Assign Genres",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Genres",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Book Authors",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Book Genres",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Harry Potter and the Philosopher's Stone\",\n  \"slug\": \"harry-potter-1\",\n  \"description\": \"The first book in the Harry Potter series.\",\n  \"coverUrl\": \"https://example.com/hp1.jpg\",\n  \"author\": \"662f10b7e034545ea7d318cf\",\n  \"genres\": [\"662f108de034545ea7d318ca\"],\n  \"tags\": [\"magic\", \"fantasy\", \"wizard\"],\n  \"edition\": {\n    \"isbn\": \"9780747532743\",\n    \"publishedYear\": 1997,\n    \"language\": \"English\",\n    \"pages\": 223,\n    \"format\": \"hardcover\"\n  },\n  \"publishDate\": \"1997-06-26\",\n  \"published\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Authors",
+      "item": [
+        {
+          "name": "Create Authors",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"J.K. Rowling\",\n  \"uniqueName\": \"Rowling\",\n  \"bio\": \"British author, best known for the Harry Potter series.\",\n  \"dob\": \"1965-07-31\",\n  \"nationality\": \"British\",\n  \"genres\": [\"67f270e9bb0f925036d7c68b\", \"67f27038e285a8595e168b6c\"],\n  \"socialLinks\": {\n    \"twitter\": \"https://twitter.com/jk_rowling\",\n    \"website\": \"https://www.jkrowling.com\"\n  },\n  \"awards\": [\"Hugo Award\", \"British Book Awards\"],\n  \"isVerified\": true\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/authors",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "authors"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"J.K. Rowling\",\n  \"uniqueName\": \"Rowling\",\n  \"bio\": \"British author, best known for the Harry Potter series.\",\n  \"dob\": \"1965-07-31\",\n  \"nationality\": \"British\",\n//   \"genres\": [\"67f270e9bb0f925036d7c68b\", \"67f27038e285a8595e168b6c\"],\n  \"genres\": [\"67f270e9bb0f925075d7c68b\", \"67f27038e285a8595e168b6c\"],\n  \"socialLinks\": {\n    \"twitter\": \"https://twitter.com/jk_rowling\",\n    \"website\": \"https://www.jkrowling.com\"\n  },\n  \"awards\": [\"Hugo Award\", \"British Book Awards\"],\n  \"isVerified\": true\n}\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/authors",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "authors"
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "346"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"15a-PJIFDExzsrUD4e9YBmibJAwSnSA\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:29:56 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"error\",\n    \"statusCode\": 404,\n    \"message\": \"Genre with id 67f270e9bb0f925075d7c68b not found\",\n    \"error\": \"Error: Genre with id 67f270e9bb0f925075d7c68b not found\\n    at createAuthor (/Users/khabibthekillys./Documents/two/Bookies/controllers/author.controllers.ts:61:27)\\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\"\n}"
+            },
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"J.K. Rowling\",\n  \"uniqueName\": \"Rowling\",\n  \"bio\": \"British author, best known for the Harry Potter series.\",\n  \"dob\": \"1965-07-31\",\n  \"nationality\": \"British\",\n  \"genres\": [\"67f270e9bb0f925036d7c68b\", \"67f27038e285a8595e168b6c\"],\n  \"socialLinks\": {\n    \"twitter\": \"https://twitter.com/jk_rowling\",\n    \"website\": \"https://www.jkrowling.com\"\n  },\n  \"awards\": [\"Hugo Award\", \"British Book Awards\"],\n  \"isVerified\": true\n}\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/authors",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "authors"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "682"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"2aa-1hGm79qGz6y8i1gblOILek3jZdM\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:30:20 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 201,\n    \"message\": \"Author created successfully\",\n    \"data\": {\n        \"author\": {\n            \"name\": \"J.K. Rowling\",\n            \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n            \"uniqueName\": \"Rowling\",\n            \"bio\": \"British author, best known for the Harry Potter series.\",\n            \"dob\": \"1965-07-31T00:00:00.000Z\",\n            \"nationality\": \"British\",\n            \"genres\": [\n                \"67f270e9bb0f925036d7c68b\",\n                \"67f27038e285a8595e168b6c\"\n            ],\n            \"isVerified\": true,\n            \"socialLinks\": {\n                \"twitter\": \"https://twitter.com/jk_rowling\",\n                \"website\": \"https://www.jkrowling.com\"\n            },\n            \"awards\": [\n                \"Hugo Award\",\n                \"British Book Awards\"\n            ],\n            \"totalBooksPublished\": 0,\n            \"followers\": 0,\n            \"_id\": \"67f273db4aa82ebfeb9c345c\",\n            \"createdAt\": \"2025-04-06T12:30:19.826Z\",\n            \"updatedAt\": \"2025-04-06T12:30:19.826Z\",\n            \"__v\": 0\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Author",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nationality\": \"English\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/authors/:authorId",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "authors",
+                ":authorId"
+              ],
+              "variable": [
+                {
+                  "key": "authorId",
+                  "value": "67f2745f4aa82ebfeb9c3466"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"nationality\": \"English\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/authors/:authorId",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "authors",
+                    ":authorId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "authorId",
+                      "value": "67f2745f4aa82ebfeb9c3466"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "662"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"296-wAdSUvhgP4JxInfHkiBgvylA2Co\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:33:31 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"author\": {\n            \"socialLinks\": {\n                \"twitter\": \"https://twitter.com/jk_rowling\",\n                \"website\": \"https://www.jkrowling.com\"\n            },\n            \"_id\": \"67f2745f4aa82ebfeb9c3466\",\n            \"name\": \"J.K. Rowling\",\n            \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n            \"uniqueName\": \"Rowling\",\n            \"bio\": \"British author, best known for the Harry Potter series.\",\n            \"dob\": \"1965-07-31T00:00:00.000Z\",\n            \"nationality\": \"English\",\n            \"genres\": [\n                \"67f270e9bb0f925036d7c68b\",\n                \"67f27038e285a8595e168b6c\"\n            ],\n            \"isVerified\": true,\n            \"awards\": [\n                \"Hugo Award\",\n                \"British Book Awards\"\n            ],\n            \"totalBooksPublished\": 0,\n            \"followers\": 0,\n            \"createdAt\": \"2025-04-06T12:32:31.949Z\",\n            \"updatedAt\": \"2025-04-06T12:33:31.552Z\",\n            \"__v\": 0\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Author",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9999/api/authors/:authorId",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "authors",
+                ":authorId"
+              ],
+              "variable": [
+                {
+                  "key": "authorId",
+                  "value": "67f273db4aa82ebfeb9c345c"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Author",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9999/api/authors/:authorId",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "authors",
+                    ":authorId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "authorId",
+                      "value": "67f273db4aa82ebfeb9c345c"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "662"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"296-7KS2TjV8gvFaTC2pwV7KJlo/ZiI\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:30:49 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"author\": {\n            \"socialLinks\": {\n                \"twitter\": \"https://twitter.com/jk_rowling\",\n                \"website\": \"https://www.jkrowling.com\"\n            },\n            \"_id\": \"67f273db4aa82ebfeb9c345c\",\n            \"name\": \"J.K. Rowling\",\n            \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n            \"uniqueName\": \"Rowling\",\n            \"bio\": \"British author, best known for the Harry Potter series.\",\n            \"dob\": \"1965-07-31T00:00:00.000Z\",\n            \"nationality\": \"British\",\n            \"genres\": [\n                \"67f270e9bb0f925036d7c68b\",\n                \"67f27038e285a8595e168b6c\"\n            ],\n            \"isVerified\": true,\n            \"awards\": [\n                \"Hugo Award\",\n                \"British Book Awards\"\n            ],\n            \"totalBooksPublished\": 0,\n            \"followers\": 0,\n            \"createdAt\": \"2025-04-06T12:30:19.826Z\",\n            \"updatedAt\": \"2025-04-06T12:30:19.826Z\",\n            \"__v\": 0\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Author",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9999/api/authors/:authorId",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "authors",
+                ":authorId"
+              ],
+              "variable": [
+                {
+                  "key": "authorId",
+                  "value": "67f273db4aa82ebfeb9c345c"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Author",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9999/api/authors/:authorId",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "authors",
+                    ":authorId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "authorId",
+                      "value": "67f273db4aa82ebfeb9c345c"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "106"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"6a-/CBHJmXS5CCJEwoVjD1JSwGG1xo\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:32:24 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"message\": \"Author deleted successfully\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get All Authors",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9999/api/authors",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "authors"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Author Copy",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9999/api/authors",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "authors"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "713"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"2c9-+PBqlJnkr5iIZtkC+QeL+Kvc3QI\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:31:20 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"totalAuthors\": 1,\n        \"totalPages\": 1,\n        \"currentPage\": 1,\n        \"authors\": [\n            {\n                \"socialLinks\": {\n                    \"twitter\": \"https://twitter.com/jk_rowling\",\n                    \"website\": \"https://www.jkrowling.com\"\n                },\n                \"_id\": \"67f273db4aa82ebfeb9c345c\",\n                \"name\": \"J.K. Rowling\",\n                \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n                \"uniqueName\": \"Rowling\",\n                \"bio\": \"British author, best known for the Harry Potter series.\",\n                \"dob\": \"1965-07-31T00:00:00.000Z\",\n                \"nationality\": \"British\",\n                \"genres\": [\n                    \"67f270e9bb0f925036d7c68b\",\n                    \"67f27038e285a8595e168b6c\"\n                ],\n                \"isVerified\": true,\n                \"awards\": [\n                    \"Hugo Award\",\n                    \"British Book Awards\"\n                ],\n                \"totalBooksPublished\": 0,\n                \"followers\": 0,\n                \"createdAt\": \"2025-04-06T12:30:19.826Z\",\n                \"updatedAt\": \"2025-04-06T12:30:19.826Z\",\n                \"__v\": 0\n            }\n        ]\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Genres",
+      "item": [
+        {
+          "name": "Create A Genre",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Real\",\n  \"description\": \"Real stories with real elements\",\n  \"slug\": \"real\",\n  \"iconUrl\": \"https://example.com/icons/real.svg\",\n  \"color\": \"#a084ca\",\n  \"isFiction\": true\n}\n ",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/genres",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "genres"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Fantasy\",\n  \"description\": \"Fictional stories with magical elements\",\n  \"slug\": \"fantasy\",\n  \"iconUrl\": \"https://example.com/icons/fantasy.svg\",\n  \"color\": \"#a084ca\",\n  \"isFiction\": true\n}\n ",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/genres",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "genres"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 201,\n    \"message\": \"Genre created successfully\",\n    \"data\": {\n        \"genre\": {\n            \"name\": \"Fantasy\",\n            \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n            \"description\": \"Fictional stories with magical elements\",\n            \"slug\": \"fantasy\",\n            \"iconUrl\": \"https://example.com/icons/fantasy.svg\",\n            \"color\": \"#a084ca\",\n            \"isFiction\": true,\n            \"parentGenre\": null,\n            \"_id\": \"67f26e871b7fb672a4ebfc86\",\n            \"createdAt\": \"2025-04-06T12:07:35.913Z\",\n            \"updatedAt\": \"2025-04-06T12:07:35.913Z\",\n            \"__v\": 0\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Genre",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:9999/api/genres/:genreId",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "genres",
+                ":genreId"
+              ],
+              "variable": [
+                {
+                  "key": "genreId",
+                  "value": "67f26e871b7fb672a4ebfc86"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create A Genre Copy",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9999/api/genres/:genreId",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "genres",
+                    ":genreId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "genreId",
+                      "value": "67f26e871b7fb672a4ebfc86"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "425"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"1a9-8UBK0yjQBE8we9sgcvnL0+AEl2w\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:08:03 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"genre\": {\n            \"_id\": \"67f26e871b7fb672a4ebfc86\",\n            \"name\": \"Fantasy\",\n            \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n            \"description\": \"Fictional stories with magical elements\",\n            \"slug\": \"fantasy\",\n            \"iconUrl\": \"https://example.com/icons/fantasy.svg\",\n            \"color\": \"#a084ca\",\n            \"isFiction\": true,\n            \"parentGenre\": null,\n            \"createdAt\": \"2025-04-06T12:07:35.913Z\",\n            \"updatedAt\": \"2025-04-06T12:07:35.913Z\",\n            \"__v\": 0\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Genre",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"isFiction\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/genres/:genreId",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "genres",
+                ":genreId"
+              ],
+              "variable": [
+                {
+                  "key": "genreId",
+                  "value": "67f27038e285a8595e168b6c"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Update Genre",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"isFiction\": false\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/genres/:genreId",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "genres",
+                    ":genreId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "genreId",
+                      "value": "67f27038e285a8595e168b6c"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "426"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"1aa-FSItSohKI7XckN+xfcgVwgbz3h4\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:17:01 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"genre\": {\n            \"_id\": \"67f27038e285a8595e168b6c\",\n            \"name\": \"Fantasy\",\n            \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n            \"description\": \"Fictional stories with magical elements\",\n            \"slug\": \"fantasy\",\n            \"iconUrl\": \"https://example.com/icons/fantasy.svg\",\n            \"color\": \"#a084ca\",\n            \"isFiction\": false,\n            \"parentGenre\": null,\n            \"createdAt\": \"2025-04-06T12:14:48.638Z\",\n            \"updatedAt\": \"2025-04-06T12:17:00.913Z\",\n            \"__v\": 0\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Genre",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2YxYTIwZDFhM2FjNTUxNzJkN2VmNmIiLCJlbWFpbCI6InJ2M2lqamlwM3JzdCIsImlhdCI6MTc0MzkzMzk4OCwiZXhwIjoxNzQ0MTkzMTg4fQ.UJ2iV2yKUShVqFSGShNGVwcnCq9p5Yokf9s5yenD694",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/genres/:genreId",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "genres",
+                ":genreId"
+              ],
+              "variable": [
+                {
+                  "key": "genreId",
+                  "value": "67f26e871b7fb672a4ebfc86"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Genre",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/genres/:genreId",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "genres",
+                    ":genreId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "genreId",
+                      "value": "67f26e871b7fb672a4ebfc86"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "105"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"69-xiKrgWfuI64ktB+J3iTpgOtu3ys\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:14:26 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"message\": \"Genre deleted successfully\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get All Genres",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9999/api/genres",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9999",
+              "path": [
+                "api",
+                "genres"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Genre Copy",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/genres",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "genres"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+             
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"totalGenres\": 1,\n        \"totalPages\": 1,\n        \"currentPage\": 1,\n        \"genres\": [\n            {\n                \"_id\": \"67f26e871b7fb672a4ebfc86\",\n                \"name\": \"Fantasy\",\n                \"userId\": \"67f1a20d1a3ac55172d7ef6b\",\n                \"description\": \"Fictional stories with magical elements\",\n                \"slug\": \"fantasy\",\n                \"iconUrl\": \"https://example.com/icons/fantasy.svg\",\n                \"color\": \"#a084ca\",\n                \"isFiction\": true,\n                \"parentGenre\": null,\n                \"createdAt\": \"2025-04-06T12:07:35.913Z\",\n                \"updatedAt\": \"2025-04-06T12:07:35.913Z\",\n                \"__v\": 0\n            }\n        ]\n    }\n}"
+            },
+            {
+              "name": "Delete Genre Copy",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9999/api/genres",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9999",
+                  "path": [
+                    "api",
+                    "genres"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "125"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"7d-mut5IhwawyZBLj1z9nW6F+jceRE\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 06 Apr 2025 12:14:39 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"totalGenres\": 0,\n        \"totalPages\": 0,\n        \"currentPage\": 1,\n        \"genres\": []\n    }\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

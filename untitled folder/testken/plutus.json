@@ -1,0 +1,203 @@
+{
+  "preamble": {
+    "title": "khabib/testken",
+    "description": "Aiken contracts for project 'khabib/testken'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.15+f03633e"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "access_control.med_data_sharing.spend",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/access_control~1RecordDatum"
+        }
+      },
+      "redeemer": {
+        "title": "action",
+        "schema": {
+          "$ref": "#/definitions/access_control~1RecordAction"
+        }
+      },
+      "compiledCode": "5901f801010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cdc3a400530080024888966002600460106ea800e26466453001159800980098059baa002899912cc004c00cc034dd5000c660026eb8c044c038dd5000c8c048c04cc04c00644646600200200644b30010018a508acc004cdc79bae30150010038a51899801001180b000a020404d300d37540129111192cc004c02000a2003159800980600144c966002005159800998021bac3005301437540100031980099b8f006001a50a51404914a0809229410121bae30163013375401d1323259800801c4cdc41bad3018301930193019301537540126eb4c060c06400a29410131bae30170013013375401c8089011198011bac30033012375400c0088b2018300f300c375400464b30010018a60103d87a8000899ba548000cc03cc0400052f5c08070dd618079808180818081808180818081808180818061baa0048b201498059baa0079807801a444b300130040028acc004c03cdd5005400e2c80822b30013008002899192cc004c05400a00b1640486eb8c04c004c03cdd5005456600266e1d20040028991919912cc004c05c00e00f1640506eb4c050004dd7180a001180a00098079baa00a8b201a40348068601a601c0026e1d20003009375400716401c300800130033754011149a26cac8009",
+      "hash": "ccdb3a3755f45cb3d6dad343f01fef4bd19b02a2d45de30c59c3d3e9"
+    },
+    {
+      "title": "access_control.med_data_sharing.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "5901f801010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cdc3a400530080024888966002600460106ea800e26466453001159800980098059baa002899912cc004c00cc034dd5000c660026eb8c044c038dd5000c8c048c04cc04c00644646600200200644b30010018a508acc004cdc79bae30150010038a51899801001180b000a020404d300d37540129111192cc004c02000a2003159800980600144c966002005159800998021bac3005301437540100031980099b8f006001a50a51404914a0809229410121bae30163013375401d1323259800801c4cdc41bad3018301930193019301537540126eb4c060c06400a29410131bae30170013013375401c8089011198011bac30033012375400c0088b2018300f300c375400464b30010018a60103d87a8000899ba548000cc03cc0400052f5c08070dd618079808180818081808180818081808180818061baa0048b201498059baa0079807801a444b300130040028acc004c03cdd5005400e2c80822b30013008002899192cc004c05400a00b1640486eb8c04c004c03cdd5005456600266e1d20040028991919912cc004c05c00e00f1640506eb4c050004dd7180a001180a00098079baa00a8b201a40348068601a601c0026e1d20003009375400716401c300800130033754011149a26cac8009",
+      "hash": "ccdb3a3755f45cb3d6dad343f01fef4bd19b02a2d45de30c59c3d3e9"
+    },
+    {
+      "title": "placeholder.placeholder.mint",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "58d001010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c98dd7180518049baa0048acc004cdc3a400400713233226300b001300b300c0013009375400915980099b874801000e264c601460126ea80122b30013370e9003001c4c8cc898dd698058009805980600098049baa0048acc004cdc3a40100071326300a3009375400913233226375a60160026016601800260126ea8011007200e401c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "f2388d136606a27c4a531d0040c3e12e07eb95cd5011793c160707dc"
+    },
+    {
+      "title": "placeholder.placeholder.spend",
+      "datum": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "58d001010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c98dd7180518049baa0048acc004cdc3a400400713233226300b001300b300c0013009375400915980099b874801000e264c601460126ea80122b30013370e9003001c4c8cc898dd698058009805980600098049baa0048acc004cdc3a40100071326300a3009375400913233226375a60160026016601800260126ea8011007200e401c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "f2388d136606a27c4a531d0040c3e12e07eb95cd5011793c160707dc"
+    },
+    {
+      "title": "placeholder.placeholder.withdraw",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "58d001010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c98dd7180518049baa0048acc004cdc3a400400713233226300b001300b300c0013009375400915980099b874801000e264c601460126ea80122b30013370e9003001c4c8cc898dd698058009805980600098049baa0048acc004cdc3a40100071326300a3009375400913233226375a60160026016601800260126ea8011007200e401c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "f2388d136606a27c4a531d0040c3e12e07eb95cd5011793c160707dc"
+    },
+    {
+      "title": "placeholder.placeholder.publish",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "58d001010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c98dd7180518049baa0048acc004cdc3a400400713233226300b001300b300c0013009375400915980099b874801000e264c601460126ea80122b30013370e9003001c4c8cc898dd698058009805980600098049baa0048acc004cdc3a40100071326300a3009375400913233226375a60160026016601800260126ea8011007200e401c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "f2388d136606a27c4a531d0040c3e12e07eb95cd5011793c160707dc"
+    },
+    {
+      "title": "placeholder.placeholder.vote",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "58d001010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c98dd7180518049baa0048acc004cdc3a400400713233226300b001300b300c0013009375400915980099b874801000e264c601460126ea80122b30013370e9003001c4c8cc898dd698058009805980600098049baa0048acc004cdc3a40100071326300a3009375400913233226375a60160026016601800260126ea8011007200e401c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "f2388d136606a27c4a531d0040c3e12e07eb95cd5011793c160707dc"
+    },
+    {
+      "title": "placeholder.placeholder.propose",
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "58d001010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c98dd7180518049baa0048acc004cdc3a400400713233226300b001300b300c0013009375400915980099b874801000e264c601460126ea80122b30013370e9003001c4c8cc898dd698058009805980600098049baa0048acc004cdc3a40100071326300a3009375400913233226375a60160026016601800260126ea8011007200e401c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "f2388d136606a27c4a531d0040c3e12e07eb95cd5011793c160707dc"
+    },
+    {
+      "title": "placeholder.placeholder.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58d001010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c98dd7180518049baa0048acc004cdc3a400400713233226300b001300b300c0013009375400915980099b874801000e264c601460126ea80122b30013370e9003001c4c8cc898dd698058009805980600098049baa0048acc004cdc3a40100071326300a3009375400913233226375a60160026016601800260126ea8011007200e401c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "f2388d136606a27c4a531d0040c3e12e07eb95cd5011793c160707dc"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "List$ByteArray": {
+      "dataType": "list",
+      "items": {
+        "$ref": "#/definitions/ByteArray"
+      }
+    },
+    "access_control/RecordAction": {
+      "title": "RecordAction",
+      "anyOf": [
+        {
+          "title": "Share",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "Revoke",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "title": "revoked_party",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        },
+        {
+          "title": "Update",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": [
+            {
+              "title": "new_record_hash",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "new_timestamp",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "access_control/RecordDatum": {
+      "title": "RecordDatum",
+      "anyOf": [
+        {
+          "title": "RecordDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "patient_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "record_hash",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "authorized_parties",
+              "$ref": "#/definitions/List$ByteArray"
+            },
+            {
+              "title": "last_updated",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

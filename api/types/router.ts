@@ -42,7 +42,7 @@ export interface AuthenticatedRouter {
     router: Router;
 }
 
-export function CardaRouter(): AuthenticatedRouter {
+export function BookiesRouter(): AuthenticatedRouter {
     const router = Router();
 
     const typedRouter: AuthenticatedRouter = {

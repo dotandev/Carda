@@ -1,0 +1,35 @@
+4. How to Use This System
+User registers by calling JoinPlatform (off-chain call submits tx with new datum)
+
+Owner grants access to doctors/pharmacies by calling GrantAccess
+
+Doctors add records by calling AddRecord (only if authorized)
+
+Pharmacies add comments by calling AddComment
+
+Owner revokes access by calling RevokeAccess
+
+Off-chain Node.js logs all actions locally for auditing
+
+Combine logs with on-chain event list for immutable audit trail
+
+Use monitoring tools on backend logs and transactions to detect anomalies
+
+5. Privacy & Security Notes
+Sensitive info (medical records) are referenced by encrypted hash, never stored on-chain
+
+Access is strictly role-based and checked on-chain
+
+Events provide transparency without leaking private data
+
+Off-chain logs must be secured and access-controlled
+
+If you want, I can help you with:
+
+Full test scripts (unit + integration)
+
+Dockerized monitoring pipeline
+
+Frontend sample with React and Lucid integration
+
+Let me know!

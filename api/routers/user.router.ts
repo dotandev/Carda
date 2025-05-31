@@ -1,39 +1,17 @@
-import { UserValidator } from "../validators/user.validator";
-import { UserController } from "../controllers";
-import { Authenticator, createValidatorMiddleware } from "../middlewares";
-import { BookiesRouter } from "../types";
+import { authController } from '../controllers';
+import { Router } from 'express';
 
-const authenticator = new Authenticator();
-const userController = new UserController();
-const userValidator = new UserValidator()
-const userValidatorMiddleware = createValidatorMiddleware(userValidator)
+export const userRouter = Router() 
 
+userRouter.post('/signup/user', authController.createUser);
+userRouter.post('/login/user', authController.loginUser);
 
-export const userRouter = BookiesRouter();
+userRouter.post('/signup/doctor', authController.createDoctor);
+userRouter.post('/login/doctor', authController.loginDoctor);
 
+userRouter.post('/signup/org', authController.createOrg);
+userRouter.post('/login/org', authController.loginOrg);
 
-
-
-const {
-    CreateUser,
-    LoginUser,
-} = userController;
-
-const {
-    authenticate,
-} = authenticator;
-
-const {
-    validateCreate,
-} = userValidatorMiddleware
-
-userRouter
-    .post("/register", validateCreate(), CreateUser)
-    .post("/login", LoginUser)
-
-
-// ⁠POST /api/register (user registration)
-// •⁠  ⁠POST /api/login (user login)
-
-
+userRouter.post('/signup/pharmacist', authController.createPharmacist);
+userRouter.post('/login/pharmacist', authController.loginPharmacist);
 

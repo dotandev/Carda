@@ -1,2 +1,2 @@
+export * from './prescription.router'
 export * from './user.router'
-export * from './patient.router'
