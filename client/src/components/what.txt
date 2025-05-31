@@ -1,0 +1,36 @@
+So, I need the detailed code for these:
+
+ORGS:
+Join (With Address)
+Add Doctors
+Assign Doctors To Patients.
+
+Doctors:
+Join An Org
+See All Assigned Patients
+See All records of patients
+Create Record For Patients
+Create detailed prescriptions for the patient.
+
+Patient:
+
+Give Access To Organizations
+See Assigned Doctors
+See prescriptions
+See records
+Share Records with pharmacist
+Revoke access to records to pharmacist
+Share Prescriptions with pharmacist
+Revoke prescriptions to records to pharmacist
+
+Pharmacist:
+
+Try to access shared records
+See the data
+
+
+Open Data/ Government
+
+suggest these
+
+
