@@ -1,50 +1,14 @@
-import { IValidator } from "@/types/validators";
 import { Request, Response, NextFunction } from "express";
+import { ZodSchema } from "zod";
 
-export function createValidatorMiddleware<T>(
-  validator: IValidator<T>
-) {
-  return {
-    validateCreate: () => async (req: Request, res: Response, next: NextFunction) => {
-      try {
-        await validator.validateCreate(req.body);
-        next();
-      } catch (err) {
-        res.status(400).json({ error: "Validation error", details: err });
-      }
-    },
-    validateUpdate: () => async (req: Request, res: Response, next: NextFunction) => {
-      try {
-        await validator.validateUpdate(req.body);
-        next();
-      } catch (err) {
-        res.status(400).json({ error: "Validation error", details: err });
-      }
-    },
-    validateId: (idType: string) => async (req: Request, res: Response, next: NextFunction) => {
-      try {
-        if (idType === ":bookId") {
-          await validator.validateGet(req.params.bookId);
-        }
-        if (idType === ":genreId") {
-            await validator.validateGet(req.params.genreId)
-        }
-        if (idType === ":authorId") {
-            await validator.validateGet(req.params.authorId)
-        }
-        next();
-      } catch (err) {
-        res.status(400).json({ error: "Invalid ID", details: err });
-      }
-    },
-
-    validateFields: (fields: Record<any, any>) => async (req: Request, res: Response, next: NextFunction) => {
-        try {
-          await validator.validateGetByFields(fields)
-          next();
-        } catch (err) {
-          res.status(400).json({ error: "Validation error", details: err });
-        }
-      },
-  };
-}
+export const validate = (schema: ZodSchema<any>) => (req: Request, res: Response, next: NextFunction) => {
+  try {
+    req.body = schema.parse(req.body);
+    next();
+  } catch (error: any) {
+    return res.status(400).json({
+      message: "Validation failed",
+      errors: error.errors || error.message
+    });
+  }
+};

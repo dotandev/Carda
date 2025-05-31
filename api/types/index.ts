@@ -1,4 +1,4 @@
-export * from './patient'
+
 export * from './base'
 export * from './validators'
 export * from './auth'

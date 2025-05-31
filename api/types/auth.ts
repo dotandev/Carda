@@ -1,14 +1,56 @@
 import { Request } from "express";
 import { RequestMetadata } from "./router";
+import { ObjectId, Schema } from "mongoose";
 
-interface IUser {
-    email: string;
-    password: string;
-    firstName?: string;
-    lastName?: string;
+interface IUser extends Document {
+    _id: ObjectId;
+    walletAddress: string;
     username: string;
-    _id?: string;
-}
+    role: 'org' | 'doctor' | 'patient' | 'pharmacist';
+    orgIds?: Schema.Types.ObjectId[];
+    assignedPatients?: Schema.Types.ObjectId[];
+    email: string;
+    assignedDoctors?: Schema.Types.ObjectId[];
+    sharedRecords?: Schema.Types.ObjectId[];
+    sharedPrescriptions?: Schema.Types.ObjectId[];
+  }
+
+interface IDoctor extends Document {
+    _id: ObjectId;
+    name: string;
+    walletAddress: string;
+    role: 'org' | 'doctor' | 'patient' | 'pharmacist';
+    username: string;
+    specialization: string;
+    email: string;
+    orgId: Schema.Types.ObjectId; 
+    assignedPatients?: Schema.Types.ObjectId[]; 
+  }
+
+interface IOrganization extends Document {
+    _id: ObjectId;
+    name: string;
+    email: string;
+    role: 'org' | 'doctor' | 'patient' | 'pharmacist';
+    walletAddress: string;
+    username: string;
+    doctors?: Schema.Types.ObjectId[]; // List of doctors in this organization
+    patients?: Schema.Types.ObjectId[]; // List of patients associated with this organization
+  }
+
+interface IPharmacist extends Document {
+    _id: ObjectId;
+    role: 'org' | 'doctor' | 'patient' | 'pharmacist';
+    name: string;
+    email: string;
+    orgId?: string; 
+    walletAddress: string;
+    username: string;
+  }
+
+
+
+
 interface IRole {
     id: string;
     name: string;
@@ -67,15 +109,19 @@ interface IMetadata {
   }
   
   type JWTPayload = {
-    userId: string;
-    role?: 'user' | 'admin';
+    id: string;
+    role?: 'doctor' | 'pharmacist' | 'patient' | 'org';
     email: string;
+    walletAddress: string;
   };
   
 
 
   export { 
-    IUser,
+    IUser,  
+    IDoctor,
+    IOrganization,
+    IPharmacist,
     IRole,
     IToken,
     IRefreshToken,
