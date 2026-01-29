@@ -11,7 +11,7 @@
   "dependencies": {
     "@lucid-evolution/lucid": "^0.4.25",
     "@meshsdk/core": "^1.9.0-beta.2",
-    "next": "15.2.4",
+    "next": "16.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tsx": "^4.19.3"
